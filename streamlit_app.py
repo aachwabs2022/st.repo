@@ -43,6 +43,15 @@ st.header('st.slider')
 
 # st.subheader('Range time slider')
 
+
+# st.header('Line chart')
+
+# chart_data = pd.DataFrame(
+#      np.random.randn(20, 3),
+#      columns=['a', 'b', 'c'])
+
+# st.line_chart(chart_data)
+
 # appointment = st.slider(
 #      "Schedule your appointment:",
 #      value=(time(11, 30), time(12, 45)))
