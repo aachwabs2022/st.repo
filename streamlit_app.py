@@ -43,15 +43,6 @@ st.header('st.slider')
 
 # st.subheader('Range time slider')
 
-
-# st.header('Line chart')
-
-# chart_data = pd.DataFrame(
-#      np.random.randn(20, 3),
-#      columns=['a', 'b', 'c'])
-
-# st.line_chart(chart_data)
-
 # appointment = st.slider(
 #      "Schedule your appointment:",
 #      value=(time(11, 30), time(12, 45)))
@@ -61,8 +52,18 @@ st.header('st.slider')
 
 # st.subheader('Datetime slider')
 
-start_time = st.slider(
-     "When do you start?",
-     value=datetime(2020, 1, 1, 9, 30),
-     format="MM/DD/YY - hh:mm")
-st.write("Start time:", start_time)
+# start_time = st.slider(
+#      "When do you start?",
+#      value=datetime(2020, 1, 1, 9, 30),
+#      format="MM/DD/YY - hh:mm")
+# st.write("Start time:", start_time)
+
+
+
+st.header('Line chart')
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
