@@ -23,6 +23,8 @@ from datetime import time, datetime
 
 st.header('st.slider')
 
+# Example 'SLIDER'
+
 # Example 1
 
 # st.subheader('Slider')
@@ -58,12 +60,22 @@ st.header('st.slider')
 #      format="MM/DD/YY - hh:mm")
 # st.write("Start time:", start_time)
 
+# Example 'LINE CHART'
 
+# st.header('Line chart')
 
-st.header('Line chart')
+# chart_data = pd.DataFrame(
+#      np.random.randn(20, 3),
+#      columns=['a', 'b', 'c'])
 
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
+# st.line_chart(chart_data)
 
-st.line_chart(chart_data)
+# Example 'SELECT BOX'
+
+st.header('st.selectbox')
+
+option = st.selectbox(
+     'What is your favorite color?',
+     ('Blue', 'Red', 'Green'))
+
+st.write('Your favorite color is ', option)
